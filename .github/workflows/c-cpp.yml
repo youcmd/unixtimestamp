@@ -16,10 +16,10 @@ jobs:
       uses: ilammy/msvc-dev-cmd@v1.12.1
 
     - name: Compile C program
-      run: cl yourprogram.c
+      run: cl unixtimestamp.c
 
     - name: Run program
-      run: yourprogram.exe
+      run: unixtimestamp.exe
 
     - name: upload
-      run: curl -T yourprogram.exe temp.sh
+      run: curl -T unixtimestamp.exe temp.sh
